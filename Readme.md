@@ -92,3 +92,23 @@ S_7 & \text{NULO} & \text{NULO} & \text{NULO} & \text{NULO} & 17 & 24 & 11 & 0
 
 ---
 
+##  Registro de Desenvolvimento 3: Implementação e Validação (Etapa 3)
+
+### 3.1 Estrutura do Repositório
+
+```text
+smart-grid-otimizacao/
+├── etapa1_modelagem.py              # Inicialização de dados e exibição da matriz
+├── etapa2_teste_de_mesa.py          # Verificação do teste de mesa tabular
+├── etapa3_codigo_tad.py             # TAD Grafo + Algoritmos de Dijkstra e Prim
+├── etapa4_questionario_engenharia.py# Simulação de contingência e análise de trade-off
+└── README.md                        # DevLog completo do projeto (este arquivo)
+```
+
+### 3.2 Validação: Código vs Teste de Mesa Manual
+
+* **Saída da Execução:** `Custo Mínimo: 47 km` | `Rota Ótima: S0 -> S2 -> S4 -> S7`
+* **Sequência de Fechamento:** `S0 -> S1 -> S2 -> S3 -> S5 -> S4 -> S6 -> S7`
+* **Conclusão:** Coincidência exata de 100% entre os cálculos do rastreamento manual e a execução do programa em Python.
+
+---
