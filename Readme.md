@@ -102,7 +102,7 @@ smart-grid-otimizacao/
 ├── etapa2_teste_de_mesa.py          # Verificação do teste de mesa tabular
 ├── etapa3_codigo_tad.py             # TAD Grafo + Algoritmos de Dijkstra e Prim
 ├── etapa4_questionario_engenharia.py# Simulação de contingência e análise de trade-off
-└── README.md                        # DevLog completo do projeto (este arquivo)
+└── README.md                        # DevLog completo do projeto 
 ```
 
 ### 3.2 Validação: Código vs Teste de Mesa Manual
@@ -112,3 +112,27 @@ smart-grid-otimizacao/
 * **Conclusão:** Coincidência exata de 100% entre os cálculos do rastreamento manual e a execução do programa em Python.
 
 ---
+##  Registro de Desenvolvimento 4: Análise de Engenharia e Contingência (Etapa 4)
+
+### 4.1 Questão 1: Rota e Custo Ótimo (Operação Normal)
+
+* **Distância Mínima Acumulada:** **47 km**
+* **Sequência Exata da Rota Ótima:** $S_0 \rightarrow S_2 \rightarrow S_4 \rightarrow S_7$
+* **Ordem Cronológica de Fechamento dos Vértices pelo Dijkstra:**
+  $$S_0 \rightarrow S_1 \rightarrow S_2 \rightarrow S_3 \rightarrow S_5 \rightarrow S_4 \rightarrow S_6 \rightarrow S_7$$
+
+### 4.2 Questão 2: Simulação de Contingência — Falha no Ramal $e_5 = (S_2, S_4)$
+
+Simulação da queda de uma torre desativando o ramal $e_5$ ($w_5 = \infty$).
+
+* **Nova Rota Ótima de Emergência:** $S_0 \rightarrow S_1 \rightarrow S_3 \rightarrow S_4 \rightarrow S_7$
+* **Novo Custo Total Acumulado:** $13 + 12 + 7 + 17 =$ **49 km**
+* **Acréscimo Absoluto:** $+2\text{ km}$
+* **Impacto Percentual:**
+  $$\Delta\% = \left(\frac{49 - 47}{47}\right) \times 100\% \approx 4,26\%$$
+
+### 4.3 Questão 3: Árvore Geradora Mínima (Prim) vs Dijkstra
+
+* **Custo Total da Infraestrutura Global (Prim MST):** **75 km**
+  * **Arestas Selecionadas pela MST:**  
+    $(S_0, S_1) = 13$, $(S_1, S_2) = 10$, $(S_1, S_3) = 12$, $(S_3, S_4) = 7$, $(S_4, S_5) = 8$, $(S_3, S_6) = 14$, $(S_6, S_7) = 11$.
