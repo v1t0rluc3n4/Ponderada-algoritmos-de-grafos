@@ -20,7 +20,7 @@ def simular_teste_de_mesa():
     # Inicialização
     line_init = f"{'Inic':<5} | {'-':<4} | {'-':<5} | "
     line_init += " | ".join([f"{dist[i]:>5}" if dist[i] != float('inf') else "  inf" for i in range(8)])
-    line_init += " | Inicialização na origem S0"
+    line_init += " | Inicializacao na origem S0"
     print(line_init)
     
     for it in range(1, 9):

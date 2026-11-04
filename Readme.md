@@ -1,10 +1,7 @@
-# 🛠️ Otimização de Redes Elétricas Inteligentes (Smart Grid) — DevLog
+# Otimização de Redes Elétricas Inteligentes (Smart Grid)
 
 **Projeto:** Otimização de Rede Elétrica Smart Grid (Recomposição de Alta Tensão)  
-**Módulo:** Teoria dos Grafos, Parametrização por RA, Algoritmos de Dijkstra e Prim  
-**Autor / RA:** `A2025.1A.0278`  
-**Professor:** Prof. Murilo Zanini de Carvalho  
-
+**Módulo:** Teoria dos Grafos, Parametrização por RA, Algoritmos de Dijkstra e Prim   
 ---
 
 ##  Visão Geral do Projeto

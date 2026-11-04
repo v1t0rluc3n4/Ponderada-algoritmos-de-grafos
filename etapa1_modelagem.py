@@ -42,7 +42,7 @@ def exibir_etapa1():
     for cod, (u, v, w) in PESOS.items():
         print(f"{cod:>3} | ({u}, {v}) : {w:>2} km")
     
-    print("\n=== MATRIZ DE ADJACÊNCIA 8x8 (SIMÉTRICA COM NULO) ===")
+    print("\n=== MATRIZ DE ADJACENCIA 8x8 (SIMETRICA COM NULO) ===")
     header = "      " + " ".join([f"{v:>6}" for v in VERTICES])
     print(header)
     print("    " + "-" * (len(header) - 4))
